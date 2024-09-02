@@ -31,7 +31,7 @@ a {
 
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #bac7ca;
+  background-color: #dbdce0;
 }
 
 body::after {
@@ -43,18 +43,19 @@ body::after {
   right: 0;
   background-color: var(--text-dark);
   z-index: -1;
+
   animation: body-bg 1s ease-in-out forwards;
 }
 
 .midsection h1{
-    margin-top: 60%;
-    color: #2479f1;
-    font-family: "Pacifico", cursive;
-    font-size: x-large;
-}
-.styling a {
+  margin-top: 60%;
+  color: #2479f1;
   font-family: "Pacifico", cursive;
   font-size: x-large;
+}
+.styling a {
+font-family: "Pacifico", cursive;
+font-size: x-large;
 }
 
 @keyframes body-bg {
@@ -82,7 +83,7 @@ body::before {
 .container {
   position: relative;
   isolation: isolate;
-  min-height: 250vh;
+  min-height: 100vh;
   max-width: var(--max-width);
   margin-inline: auto;
   overflow: hidden;
@@ -127,7 +128,7 @@ nav {
 
 .letter-s {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40rem;
@@ -140,7 +141,7 @@ nav {
   position: absolute;
   width: 100%;
   max-width: 200px;
-  top: 22.5%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.8));
@@ -148,8 +149,8 @@ nav {
 
 .container h4 {
   position: absolute;
-  top: 22.5%;
-  left: 51%;
+  top: 50%;
+  left: 50%;
   font-size: 5rem;
   color: var(--white);
   letter-spacing: 25px;
@@ -164,17 +165,16 @@ nav {
 }
 
 .container .explore {
-  top: 25.5%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, calc(-50% + 225px));
   color: var(--text-dark);
   background-color: var(--white);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  position: absolute;
 }
 
 .container .print {
-  top: 28%;
+  top: 50%;
   right: 0;
   transform: translate(0, -50%) rotate(90deg);
   padding: calc(1rem - 4px) calc(2rem - 4px);
@@ -184,7 +184,7 @@ nav {
 }
 
 .container .catalog {
-  top: 15%;
+  top: 25%;
   left: 0;
   transform: translate(0, -50%) rotate(-90deg);
   padding: calc(1rem - 4px) calc(2rem - 4px);
@@ -195,7 +195,7 @@ nav {
 
 .container h5 {
   position: absolute;
-  top: 22.5%;
+  top: 50%;
   left: 50%;
   font-size: 1.2rem;
   font-weight: 500;
@@ -210,7 +210,7 @@ nav {
 }
 
 .feature-1 {
-  color: var(--white);
+  color: var(--text-dark);
   transform: translate(calc(-50% - 300px), calc(-50% - 200px));
 }
 
@@ -277,11 +277,9 @@ nav {
 .footer__links li:nth-child(1) {
   animation-delay: 6s;
 }
-
 .footer__links li:nth-child(2) {
   animation-delay: 6.5s;
 }
-
 .footer__links li:nth-child(3) {
   animation-delay: 7s;
 }
@@ -303,65 +301,9 @@ nav {
   color: var(--primary-color);
 }
 
-/* Media Queries for Responsiveness */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575.98px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav__links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .letter-s {
-    font-size: 15rem;
-    line-height: 15rem;
-  }
-
-  .container h4 {
-    font-size: 2rem;
-    letter-spacing: 10px;
-  }
-
-  .container img {
-    max-width: 150px;
-  }
-
-  .container .explore {
-    transform: translate(-50%, calc(-50% + 150px));
-    padding: 0.8rem 1.5rem;
-  }
-
-  .container .print,
-  .container .catalog {
-    padding: calc(0.8rem - 2px) calc(1.5rem - 2px);
-  }
+@media (width > 540px) {
 }
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 767.98px) {
-  .letter-s {
-    font-size: 25rem;
-    line-height: 25rem;
-  }
-
-  .container h4 {
-    font-size: 3.5rem;
-    letter-spacing: 20px;
-  }
-
-  .container .explore {
-    transform: translate(-50%, calc(-50% + 180px));
-  }
-
-  .container .print,
-  .container .catalog {
-    padding: calc(1rem - 3px) calc(2rem - 3px);
-  }
+@media (width > 768px) {
 }
-
-/* Large devices (desktops, 992
+@media (width > 1024px) {
+}
